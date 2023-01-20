@@ -1,0 +1,33 @@
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1{
+    text-align: center;
+}
+header{
+    background-color: rgb(0, 0, 75);
+    color: white;
+    border-radius: 5px;
+    padding: 3px; 
+}
+nav a{
+    color: white;
+}
+body {
+    text-align: justify;
+    background-color: rgb(243, 244, 247);
+    font-family: monospace;
+}
+ul {
+    list-style: square;
+    list-style-position: inside;
+}
+img {
+    display: block;
+    float: right;
+}
+.gold{
+    color: gold;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
