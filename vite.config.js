@@ -3,6 +3,6 @@ import { defineConfig } from 'vite'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "/igorwatanabe.github.io",
+  base: "/igorwatanabe.github.io/",
   plugins: [react()],
 })
