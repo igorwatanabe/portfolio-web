@@ -1,25 +1,36 @@
-// import { useState } from 'react';
-// import { Link } from 'react-router-dom';
-// import PropTypes from 'prop-types';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
 import brasao from '../assets/brasao-watanabe.png';
 
-
-function Header() {
+function BasicExample() {
   return (
-    <>
-    <img src={brasao} alt="brasao-watanabe" />
-      <h1>Igor Watanabe</h1>
-      <button>Home</button>
-      <button>Sobre</button>
-      <button>Contato</button>
-      <button>Projetos</button>
-    </>
+    <Navbar fixed="top" expand="lg" className="bg-body-tertiary justify-content-between" >
+      <Container>
+        <Navbar.Brand href="/portfolio-web">
+          <img
+            src={brasao}
+            width="50"
+            height="50"
+            className="d-inline-block align-top"
+            alt='brasao-watanabe' 
+          />
+        </Navbar.Brand>
+        Igor Watanabe
+        
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
+          <Nav activeKey="/home">
+            <Nav.Link href="/portfolio-web">Home</Nav.Link>
+            <Nav.Link href="/portfolio-web/projects">Projects</Nav.Link>
+            <Nav.Link href="/portfolio-web/contact">Contact</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+    
   );
 }
 
-// Header.propTypes = {
-//   renderSearchComponent: PropTypes.bool,
-//   title: PropTypes.string.isRequired,
-// };
-
-export default Header;
+export default BasicExample;
