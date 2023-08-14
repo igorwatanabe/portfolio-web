@@ -7,14 +7,16 @@ export default defineConfig({
   plugins: [react()],
 })
 
-// export default defineConfig({
-//   plugins: [react()],
-//   build: {
-//     rollupOptions: {
-//       input: {
-//         main: resolve(__dirname, "index.html"),
-//         404: resolve(__dirname, "public/404.html"),
-//       },
-//     },
-//   },
-// });
+// export default defineConfig(({ command }) => {
+//   const config = {
+//     plugins: [react()],
+//     base: '/',
+//   }
+
+//   if (command !== 'serve') {
+//     config.base = '/portfolio-web/'
+//   }
+
+//   return config
+// })
+
