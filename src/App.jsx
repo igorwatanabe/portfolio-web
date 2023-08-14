@@ -8,7 +8,7 @@ function App() {
 
   return (
     <div>
-      <HashRouter>
+      <HashRouter basename='/portfolio-web'>
         <Route exact path="/portfolio-web" component={ Home } />
         <Route exact path="/portfolio-web/projects" component={ Projects } />
         <Route exact path="/portfolio-web/contact" component={ Contact } />
