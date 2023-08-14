@@ -1,13 +1,13 @@
 import Header from "../components/Header";
-import '../styles/Header.css';
 
-function Home() {
+function Project() {
   return (
     <div>
       <Header/>
-      <h1>Projetos</h1>      
+      <h1>Projetos</h1>
+      <p>Em andamento 🚀</p>   
     </div>
   )
 }
 
-export default Home
+export default Project

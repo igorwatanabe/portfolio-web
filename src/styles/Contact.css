@@ -1,0 +1,13 @@
+/* body {
+  margin: 50px;
+}
+
+h1 {
+  margin-top: 100px;
+  margin-bottom: 0;
+} */
+
+.logos {
+  display: flex;
+  flex-direction: column;
+}
