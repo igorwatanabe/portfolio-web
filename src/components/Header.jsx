@@ -24,7 +24,7 @@ function BasicExample() {
         <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
           <Nav activeKey="/home">
             <Nav.Link href="/">Home</Nav.Link>
-            <Link href="/portfolio-web/projects">Projects</Link>
+            <Link to="/portfolio-web/projects">Projects</Link>
             <Nav.Link href="/contact">Contact</Nav.Link>
           </Nav>
         </Navbar.Collapse>
