@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Contact from './pages/Contact';
 import Home from './pages/Home';
@@ -9,11 +9,11 @@ function App() {
     <div>
       {/* <HashRouter basename='/*'> */}
       <BrowserRouter basename={import.meta.env.DEV ? '/' : '/portfolio-web/'}>
-        <Switch>
-        <Route exact path="/" component={ Home } />
-        <Route exact path="/portfolio-web/projects" component={ Projects } />
-        <Route exact path="/contact" component={ Contact } />
-      </Switch>
+        <Routes>
+          <Route path='/' element={ <Home/> } />
+          <Route path="/portfolio-web/projects" element={ <Projects/> } />
+          <Route path="/contact" element={ <Contact/> } />
+        </Routes>
       </BrowserRouter>
       
       {/* </HashRouter> */}
