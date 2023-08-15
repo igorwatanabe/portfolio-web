@@ -25,7 +25,7 @@ function BasicExample() {
           <Nav activeKey="/home">
             <Nav.Link href="/">Home</Nav.Link>
             <Link to="/portfolio-web/projects">Projects</Link>
-            <Nav.Link href="/contact">Contact</Nav.Link>
+            <Nav.Link href="/portfolio-web/contact">Contact</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
