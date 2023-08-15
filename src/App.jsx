@@ -10,7 +10,7 @@ function App() {
       {/* <HashRouter basename='/*'> */}
       <BrowserRouter basename={import.meta.env.DEV ? '/' : '/portfolio-web/'}>
         <Routes>
-          <Route path='/portfolio-web' element={ <Home/> } />
+          <Route path='/' element={ <Home/> } />
           <Route path="/projects" element={ <Projects/> } />
           <Route path="/contact" element={ <Contact/> } />
         </Routes>
