@@ -8,9 +8,9 @@ import './index.css'
 ReactDOM
 .createRoot(document.getElementById('root'))
 .render(
-  <React.StrictMode>
-    <BrowserRouter basename={import.meta.env.DEV ? '/' : '/portfolio-web/'}>
+  <BrowserRouter basename={import.meta.env.DEV ? '/' : '/portfolio-web/'}>
+    <React.StrictMode>
       <App />
-    </BrowserRouter>
-  </React.StrictMode>
+    </React.StrictMode>
+  </BrowserRouter>
 )

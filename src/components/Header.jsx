@@ -8,7 +8,7 @@ function BasicExample() {
   return (
     <Navbar fixed="top" expand="lg" className="bg-body-tertiary justify-content-between" >
       <Container>
-        <Navbar.Brand href="/portfolio-web">
+        <Navbar.Brand href="/">
           <img
             src={brasao}
             width="50"
@@ -22,9 +22,9 @@ function BasicExample() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
           <Nav activeKey="/home">
-            <Nav.Link href="/portfolio-web">Home</Nav.Link>
-            <Nav.Link href="/portfolio-web/projects">Projects</Nav.Link>
-            <Nav.Link href="/portfolio-web/contact">Contact</Nav.Link>
+            <Nav.Link href="/">Home</Nav.Link>
+            <Nav.Link href="/projects">Projects</Nav.Link>
+            <Nav.Link href="/contact">Contact</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
