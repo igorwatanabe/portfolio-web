@@ -10,7 +10,7 @@ import { defineConfig } from 'vite'
 export default defineConfig(({ command }) => {
   const config = {
     plugins: [react()],
-    base: '/portfolio-web',
+    base: '/',
   }
 
   if (command !== 'serve') {

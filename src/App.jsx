@@ -9,9 +9,9 @@ function App() {
     <div>
       {/* <HashRouter basename='/*'> */}
       <Switch>
-        <Route exact path="/portfolio-web" component={ Home } />
-        <Route exact path="/portfolio-web/projects" component={ Projects } />
-        <Route exact path="/portfolio-web/contact" component={ Contact } />
+        <Route exact path="/" component={ Home } />
+        <Route exact path="/projects" component={ Projects } />
+        <Route exact path="/contact" component={ Contact } />
       </Switch>
       {/* </HashRouter> */}
     </div>
